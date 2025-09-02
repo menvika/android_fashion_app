@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".voity"
+    android:background="@drawable/cherry_back">
+
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:text="Введите логин:"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15pt"
+        android:layout_marginRight="15pt"
+        android:textSize="30dp"
+        android:layout_marginTop="80pt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:layout_marginLeft="15pt"
+        android:textStyle="bold"
+        android:layout_marginRight="15pt"
+        app:layout_constraintTop_toBottomOf="@+id/text_login"
+        app:layout_constraintBottom_toTopOf="@+id/text_password"/>
+
+    <TextView
+        android:id="@+id/text_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="15pt"
+        android:layout_marginRight="15pt"
+        android:text="Введите пароль:"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:inputType="textPassword"
+        android:layout_marginLeft="15pt"
+        android:layout_marginRight="15pt"
+        app:layout_constraintTop_toBottomOf="@+id/text_password"
+        app:layout_constraintBottom_toTopOf="@+id/button_voity"/>
+
+    <Button
+        android:id="@+id/button_voity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Войти"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintBottom_toTopOf="@+id/panel1"
+        android:layout_marginBottom="80pt"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/panel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_voity">
+
+        <ImageView
+            android:id="@+id/linia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/panel"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/newline2" />
+
+        <TableRow
+            android:id="@+id/panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linia">
+
+            <ImageView
+                android:id="@+id/katalog"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15pt"
+                android:layout_marginRight="35pt"
+                android:layout_weight="1"
+                android:onClick="katalog"
+                app:srcCompat="@drawable/katalog" />
+
+            <ImageView
+                android:id="@+id/basket"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="basket"
+                app:srcCompat="@drawable/korzina" />
+
+            <ImageView
+                android:id="@+id/user"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="35pt"
+                android:layout_weight="1"
+                android:onClick="user"
+                app:srcCompat="@drawable/user" />
+        </TableRow>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

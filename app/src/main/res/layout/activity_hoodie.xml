@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dress"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:id="@+id/linearkatalog"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linia"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:layout_editor_absoluteX="1dp" >
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:id="@+id/hhh"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/infa"
+                android:layout_height="400dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="350dp"
+                        android:layout_height="400dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/hoodie" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="350dp"
+                        android:layout_height="400dp"
+                        android:src="@drawable/hoodie1" />
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="350dp"
+                        android:layout_height="400dp"
+                        android:src="@drawable/hoodie2" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="350dp"
+                        android:layout_height="400dp"
+                        android:layout_marginRight="25dp"
+                        android:src="@drawable/hoodie3" />
+                </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/infa"
+                app:layout_constraintTop_toBottomOf="@+id/hhh"
+                app:layout_constraintBottom_toTopOf="@+id/linia"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:text="БАЗОВОЕ ХУДИ OVERSIZE ИЗ ФУТЕРА"
+                    />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:text="3599 руб."
+                    />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="Классическая толстовка oversize с капюшоном \nиз хлопкового футера с мягкой изнанкой. \nДлинные рукава. Эластичные пояс и манжеты."
+                    android:textSize="16dp" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="390dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="Введите длину переда (в см)" />
+                    <EditText
+                        android:id="@+id/size1"
+                        android:textColor="@color/cherry"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:inputType="number" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="400dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="Введите длину рукава (в см)" />
+
+                    <EditText
+                        android:id="@+id/size2"
+                        android:textColor="@color/cherry"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="430dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="Введите ширину по низу (в см)" />
+
+                    <EditText
+                        android:id="@+id/size3"
+                        android:textColor="@color/cherry"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="560dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="Введите расстояние от плеча до плеча (в см)" />
+
+                    <EditText
+                        android:id="@+id/size4"
+                        android:textColor="@color/cherry"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="600dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="Введите ширину на уровне проймы (в см)" />
+
+                    <EditText
+                        android:id="@+id/size5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:inputType="number"/>
+                </TableRow>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:onClick="add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="В корзину" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/linia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/newline2"
+        app:layout_constraintTop_toBottomOf="@+id/linearkatalog"
+        app:layout_constraintBottom_toTopOf="@+id/panel"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/panel"
+        app:layout_constraintTop_toBottomOf="@+id/linia"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <ImageView
+            android:id="@+id/katalog"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="katalog"
+            app:srcCompat="@drawable/katalog"
+            android:layout_weight="1"
+            android:layout_marginRight="30pt"/>
+        <ImageView
+            android:id="@+id/basket"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="basket"
+            app:srcCompat="@drawable/korzina" />
+        <ImageView
+            android:id="@+id/maps"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="maps"
+            android:layout_marginLeft="30pt"
+            app:srcCompat="@drawable/maps"
+            android:layout_weight="1" />
+    </TableRow>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

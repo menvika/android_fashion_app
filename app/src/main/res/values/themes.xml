@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Mag" parent="Theme.Material3.DayNight.NoActionBar">
+         Customize your light theme here. 
+        <item name="colorPrimary">@color/cherry</item>
+        <item name="android:statusBarColor">@color/cherry</item>
+    </style>
+
+    <style name="Theme.Mag" parent="Base.Theme.Mag" />
+</resources>
